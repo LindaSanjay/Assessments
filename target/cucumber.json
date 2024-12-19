@@ -1,0 +1,163 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1934936800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User launches the browser",
+            "match": {
+              "location": "ebayCart_stepdefinitions.user_launches_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2672849400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Navigates to the ebay website",
+            "match": {
+              "location": "ebayCart_stepdefinitions.navigate_to_ebay()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118069700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verifies eBay homepage is displayed",
+            "match": {
+              "location": "ebayCart_stepdefinitions.verify_homepage()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Verify user can search required book and add to cart",
+        "description": "",
+        "id": "verify-ebay-cart-functionality;verify-user-can-search-required-book-and-add-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 250087000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enters the keyword \"book\" in Search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "book",
+                  "offset": 25
+                }
+              ],
+              "location": "ebayCart_stepdefinitions.user_enters_input(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5994400100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "clicks on search button",
+            "match": {
+              "location": "ebayCart_stepdefinitions.click_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 492633400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "clicks on the \"1\" displayed book",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                }
+              ],
+              "location": "ebayCart_stepdefinitions.click_fisrt_displayed_book(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10037457900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on add to cart in Item listing page",
+            "match": {
+              "location": "ebayCart_stepdefinitions.add_to_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 122965000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify the number of items is displayed in cart is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 52
+                }
+              ],
+              "location": "ebayCart_stepdefinitions.verify_cart(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 397742500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Logout from application",
+            "match": {
+              "location": "ebayCart_stepdefinitions.close_browsera()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Ebay Cart Functionality",
+    "description": "",
+    "id": "verify-ebay-cart-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/eBayCart.feature",
+    "tags": []
+  }
+]
